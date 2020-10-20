@@ -86,12 +86,13 @@ class TestHoliday implements IHoliday  {
         $dayOfWeek = $date->dayOfWeek;
         $week = $date->weekOfMonth;
         $dateOfDay = false;
-
         $dayOfWeek == 1 && $month == 1 && $week == 3 && $dateOfDay = "{$date->year}-01-{$date->day}";
-        $dayOfWeek == 1 && $month == 3 && $week == 4 && $dateOfDay = "{$date->year}-03-{$date->day}";
+        $dayOfWeek == 1 && $month == 3 && $dateOfDay = "{$date->year}-03-{$date->endOfWeek(1)->day}";
         $dayOfWeek == 4 && $month == 11 && $week == 4 && $dateOfDay = "{$date->year}-11-{$date->day}";
 
         return $dateOfDay;
     }
+
+
 
 }
