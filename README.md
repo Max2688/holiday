@@ -5,7 +5,7 @@ For example, user enters date 01.01.2018.
 Service checks this date and outputs statement like that: “It’s New Year on that date!”.</p>
 <p>If holiday falls on Saturday or Sunday, the additional day off will be on nearest Monday.
  For example, Easter is always celebrated on Sunday and next Monday is always an official day off.</p>
-<p><strong>List of holidays</strong></p>
+
 <p>UI should be very simple: just one field for date and one button to submit this date for processing. 
 And don’t forget about validation! System should not fall down in case of incorrect date filled.</p>
 
